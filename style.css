@@ -1,0 +1,74 @@
+body{
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #0f0f0f;
+    background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+button{
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: 0;
+    width: auto;
+    height: auto;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    font-family: "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", sans-serif;
+    padding: 10px;
+    y: 10px;
+    background-color: rgb(90, 128, 90);
+    color: white;
+    border: 0;
+    width: auto;
+    height: auto;
+    border-radius: 7px;
+    transform: translateY(-3px);
+}
+
+h1{
+    padding-top: 0;
+}
+
+.link{
+    display: flex;          
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;              
+}
+
+.card{
+    display: flex;          
+    flex-direction: column;
+    background-color: #444;
+    border-radius: 20px;
+    padding: 20px;
+    width: auto;
+    gap: 15px;
+}
+
+.card2{
+    background-color: #333;
+    border-radius: 20px;
+    padding: 20px;
+    width: auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: max-content; /* 一番広いコンテンツに幅を固定 */
+    gap: 20px;
+}
