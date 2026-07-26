@@ -14,19 +14,25 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 
+
 <body>
-  <div class="container">
-    <a href="../index.html"><button><i class="fa-solid fa-arrow-left"></i>戻る</button></a>
-        <div class="card">
-      <h1>7/27 超スケベな画像集！！</h1>
-      <a href="2026-7-27.html"><button><i class="fa-solid fa-play"></i>見る</button></a>
-    </div>
-    <div class="card">
-      <h1>7/26 ホームページの整備</h1>
-      <a href="2026-7-26.html"><button><i class="fa-solid fa-play"></i>見る</button></a>
-    </div>
+  <div class="fullscreen_container">
+  <img src="../image/never_gonna.png" class="fullscreen">
   </div>
+  <h1>2026年7月26日</h1>
+    つられたな！！！www
+  <a href="index.html"><button><i class="fa-solid fa-arrow-left"></i>戻る</button></a>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      // 3000ミリ秒（＝3秒）後に実行
+      setTimeout(() => {
+        const bgContainer = document.querySelector('.fullscreen_container');
+        if (bgContainer) {
+          bgContainer.classList.add('fade-out');
+        }
+      }, 3000);
+    });
+  </script>
 </body>
-
-
 </html>
