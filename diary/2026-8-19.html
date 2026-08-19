@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../image/onigiri_takana.png" type="image/png">
+  <title>takanah-oisii</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+  <h1>備忘録</h1>
+  なぜかこういうことがあったので<br>
+  <img src="../image/2026-08-19.png">
+  (濃い色の四角が右にはみ出している)<br>
+  これを修正することにしました
+  <h1>修正方法</h1>
+  
+  <div>
+    <img src="../image/2026-08-19-1.png">
+    <img src="../image/2026-08-19-2.png">
+  </div>
+  
+  元のプログラムがこんな感じです<br>
+  何がいけなかったかというと、<br>
+  card2のwidthが100%になっているので、<br>
+  横幅がcardと同じになりますが、<br>
+  cardのpaddingの20pxのせいでcardに収まらないのです<br>
+  その結果右にはみ出しました<br><br><br>
+  なので、
+  <img src="../image/2026-08-19-3.png">
+  このようにpaddingの分を100%から引くことで修正できました
+  <h1>書くことない！終わり！！</h1>
+  <a href="index.html"><button><i class="fa-solid fa-arrow-left"></i>戻る</button></a>
+</body>
+
+</html>
+<style>
+  img{
+    width: 20%;
+    height: auto;
+    border: 5px;
+    border-color: #fff;
+  }
+</style>
